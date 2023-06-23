@@ -23,6 +23,7 @@ Folders
 Files
 
 * `compute_likelihood.py` Compute log-likelihood for $`k`$NN$`\times`$KDE, $`k`$NN-Imputer, MissForest, MICE, and Mean. Save results for the log-likelihood scores. Uses best hyperparams from the RMSE results. Need to specify the missing data scenario ('full\_mcar', 'mcar', 'mar', 'mnar')
+* `demo.ipynb` Friendly Jupyter notebook to demonstrate how to use the $`k`$NN$`\times`$KDE with your own dataset. 
 * `hyperparam_rmse.py` Compute the NRMSE for all datasets, with 6 different missing rates, on a grid of parameters for each method. Save results for the NRMSE. Need to specify the missing data scenario ('full\_mcar', 'mcar', 'mar', 'mnar')
 * `knnxkde.py` Implementation of the $`k`$NN$`\times`$KDE.
 * `make_appendix.ipynb` Jupyter notebook to reproduce the figures in the Appendix of the manuscript.
