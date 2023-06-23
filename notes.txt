@@ -1,0 +1,42 @@
+2 modes: (One mode per Python script)
+--------
+    * RMSE: compute normalized RMSE
+    * Log-likelihood: compute mean log-likelihood of ground truth
+
+
+4 missing data scenarios: (Should be specified in the beginning of the script)
+-------------------------
+    * full_mcar: Completely MCAR for all cells
+    * mcar: MCAR on the column miss_col (only one column)
+    * mar: MAR on the column miss_cal with missing probs given by column cond_col
+    * mnar: MNAR on the column miss_cal with missing probs given by that same column
+
+
+MAIN LOOP:
+----------
+
+For a given mode...
+
+For a given missing scenario...
+
+For each dataset:
+
+    For each missing_rate:
+
+	Repeat NB_REPEAT times:
+
+	    1. Select original dataset and shuffle it: original_data
+	    2. Insert missing values in original_data following given missing scenario: miss_data
+	    3. Normalize miss_data in [0, 1]: norm_miss_data
+	    4. Normalize original_data with the same norm_params: norm_original_data
+	    5. Impute with all methods:
+		5.1. kNNxKDE with tau in [10.0, 25.0, 50.0, 100.0, 250.0, 500.0, 1000.0]
+		5.2. kNNImpute with nb_neighbors in [1, 2, 5, 10, 20, 50, 100]
+		5.3. MissForest with nb_trees in [1, 2, 3, 5, 10, 15, 20] (because computationally expensive to go higher)
+		5.4. SoftImpute with Lambda in [0.10, 0.20, 0.50, 1.0, 2.0, 5.0, 10.0]
+		5.5. GAIN with nb_epochs in [[100, 200, 400, 700, 1000, 2000, 4000] (bad anyways)
+		5.6. MICE (no hyperparam)
+		5.7. Mean (no hyperparam)
+		5.8. Median (no hyperparam)
+	    6. Compute RMSE or log-likelihood depending on mode
+	    7. Save dictionary
