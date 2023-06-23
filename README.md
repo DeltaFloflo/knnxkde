@@ -1,4 +1,4 @@
-# $k$ NN $\\times$ KDE
+# $`k`$NN$`\times`$KDE
 
 GitHub repository for the $`k`$NN$`\times`$KDE algorithm.
 
@@ -22,9 +22,9 @@ Folders
 
 Files
 
-* `compute_likelihood.py` Compute log-likelihood for $k$NN$\times$KDE, $k$NN-Imputer, MissForest, MICE, and Mean. Save results for the log-likelihood scores. Uses best hyperparams from the RMSE results. Need to specify the missing data scenario ('full\_mcar', 'mcar', 'mar', 'mnar')
+* `compute_likelihood.py` Compute log-likelihood for $`k`$NN$`\times`$KDE, $`k`$NN-Imputer, MissForest, MICE, and Mean. Save results for the log-likelihood scores. Uses best hyperparams from the RMSE results. Need to specify the missing data scenario ('full\_mcar', 'mcar', 'mar', 'mnar')
 * `hyperparam_rmse.py` Compute the NRMSE for all datasets, with 6 different missing rates, on a grid of parameters for each method. Save results for the NRMSE. Need to specify the missing data scenario ('full\_mcar', 'mcar', 'mar', 'mnar')
-* `knnxkde.py` Implementation of the $k$NN$\times$KDE.
+* `knnxkde.py` Implementation of the $`k`$NN$`\times`$KDE.
 * `make_appendix.ipynb` Jupyter notebook to reproduce the figures in the Appendix of the manuscript.
 * `make_other_figures.ipynb` Jupyter notebook to reproduce Figures 1, 2, and 3 from the main text of the manuscript.
 * `notes.txt` Blueprint of the methodology of the manuscript
