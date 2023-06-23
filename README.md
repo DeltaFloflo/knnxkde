@@ -1,4 +1,4 @@
-# $k$NN$\times$KDE
+# \$k\$NN\$\times\$KDE
 
 GitHub repository for the $k$NN$\times$KDE algorithm.
 
