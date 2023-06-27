@@ -23,7 +23,7 @@ Folders
 Files
 
 * `compute_likelihood.py` Compute log-likelihood for $`k`$NN$`\times`$KDE, $`k`$NN-Imputer, MissForest, MICE, and Mean. Save results for the log-likelihood scores. Uses best hyperparams from the RMSE results. Need to specify the missing data scenario ('full\_mcar', 'mcar', 'mar', 'mnar')
-* `demo.ipynb` **START HERE** Friendly Jupyter notebook to demonstrate how to use the $`k`$NN$`\times`$KDE with your own dataset. 
+* `demo.ipynb` **[START HERE]** Friendly Jupyter notebook to demonstrate how to use the $`k`$NN$`\times`$KDE with your own dataset. 
 * `hyperparam_rmse.py` Compute the NRMSE for all datasets, with 6 different missing rates, on a grid of parameters for each method. Save results for the NRMSE. Need to specify the missing data scenario ('full\_mcar', 'mcar', 'mar', 'mnar')
 * `knnxkde.py` Implementation of the $`k`$NN$`\times`$KDE.
 * `make_appendix.ipynb` Jupyter notebook to reproduce the figures in the Appendix of the manuscript.
@@ -33,3 +33,13 @@ Files
 * `rmse_likelihood_results_plots.ipynb` Jupyter notebook to reproduce Figures 4 and 5 in the main text of the manuscript. Generates the scripts for the LaTex tables.
 * `tests_movielens_dataset.ipynb` Requested by reviewer.
 * `utils.py` Utils functions.
+
+## Citation
+
+```bibtex
+@article{lalande2023,
+  title={Numerical Data Imputation for Multimodal Data Sets: A Probabilistic Nearest-Neighbor Kernel Density Approach},
+  author={Florian, Lalande and Kenji, Doya},
+  journal={Transactions on Machine Learning Research},
+  year={2023}
+}
