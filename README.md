@@ -41,5 +41,8 @@ Files
   title={Numerical Data Imputation for Multimodal Data Sets: A Probabilistic Nearest-Neighbor Kernel Density Approach},
   author={Florian, Lalande and Kenji, Doya},
   journal={Transactions on Machine Learning Research},
-  year={2023}
+  issn={2835-8856},
+  year={2023},
+  url={https://openreview.net/forum?id=KqR3rgooXb},
+  note={Reproducibility Certification},
 }
