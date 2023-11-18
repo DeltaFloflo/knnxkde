@@ -4,9 +4,8 @@ GitHub repository for the $`k`$NN$`\times`$KDE algorithm.
 
 ## Description
 
-**Numerical Data Imputation for Multimodal Data Sets:  A Probabilistic Nearest-Neighbor Kernel Density Approach**  
+**Numerical Data Imputation for Multimodal Data Sets:  A Probabilistic Nearest-Neighbor Kernel Density Approach** [View article](https://openreview.net/forum?id=KqR3rgooXb)  
 Transaction on Machine Learning Research, June 2023
-[View article](https://openreview.net/forum?id=KqR3rgooXb)
 
 All methods and data are available here.  
 You can reproduce all results and figures with the Jupyter Notebooks.
